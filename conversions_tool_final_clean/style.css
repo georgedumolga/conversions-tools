@@ -1,0 +1,50 @@
+/* HEADER STYLES */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #001f3f;
+  color: white;
+  flex-wrap: wrap;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.logo {
+  width: 55px;
+  height: auto;
+}
+.title-block h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+.slogan {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+.header-icons {
+  display: flex;
+  gap: 15px;
+}
+.icon-link img {
+  width: 28px;
+  height: 28px;
+  transition: 0.2s ease;
+}
+.icon-link img:hover {
+  transform: scale(1.15);
+}
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  .header-left {
+    justify-content: center;
+  }
+}
